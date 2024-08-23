@@ -398,6 +398,7 @@ header #home .img-home img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  gap: 24px;
 }
 #contatos .contatos-form .inputs .form-group {
   display: flex;
