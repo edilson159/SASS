@@ -12,10 +12,13 @@
     gap: 2rem;
     padding: 2rem 0px;
     .imgs-espaco {
-      display: flex;
-      gap: 1.5rem;
       max-width: 500px;
+      &:nth-child(n + 1) {
+        display: flex;
+        gap: 1.5rem;
+      }
     }
+
     .espaco-textos {
       @extend .imgs-espaco;
       display: flex;

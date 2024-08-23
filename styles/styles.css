@@ -92,9 +92,11 @@ header #home .img-home img {
   padding: 2rem 0px;
 }
 #nosso-espaco .detalhes .imgs-espaco, #nosso-espaco .detalhes .espaco-textos {
+  max-width: 500px;
+}
+#nosso-espaco .detalhes .imgs-espaco:nth-child(n+1), #nosso-espaco .detalhes .espaco-textos:nth-child(n+1) {
   display: flex;
   gap: 1.5rem;
-  max-width: 500px;
 }
 #nosso-espaco .detalhes .espaco-textos {
   display: flex;
