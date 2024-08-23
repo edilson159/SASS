@@ -92,7 +92,14 @@ header #home .img-home img {
   padding: 2rem 0px;
 }
 #nosso-espaco .detalhes .imgs-espaco, #nosso-espaco .detalhes .espaco-textos {
+  display: flex;
+  gap: 1.5rem;
   max-width: 500px;
+}
+#nosso-espaco .detalhes .espaco-textos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 #nosso-espaco .detalhes .espaco-textos .titulo {
   font-family: "Krona One", sans-serif;

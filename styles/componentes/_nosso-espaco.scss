@@ -12,10 +12,15 @@
     gap: 2rem;
     padding: 2rem 0px;
     .imgs-espaco {
+      display: flex;
+      gap: 1.5rem;
       max-width: 500px;
     }
     .espaco-textos {
       @extend .imgs-espaco;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       .titulo {
         @include mixins.ff-fs-color(
           variaveis.$ft-titulos,
