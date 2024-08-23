@@ -1,9 +1,13 @@
-@use "./abstract/root" ;
+@use "../Reset/Reset";
 
-@use "./componentes/header" ;
+@use "./abstract/root";
+
+@use "./componentes/header";
 
 @use "./componentes/nosso-espaco";
 
 @use "./componentes/servico";
 
-@use "./componentes/discont"
+@use "./componentes/discont";
+
+@use "./componentes/contact";

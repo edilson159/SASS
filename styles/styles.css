@@ -1,3 +1,165 @@
+/* CSS Document */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+and,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+textarea,
+select {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/*blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:none;
+}*/
+del {
+  text-decoration: line-through;
+}
+
+hr {
+  background: transparent;
+  border: 0;
+  clear: both;
+  color: transparent;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+mark {
+  background-color: #ffffb3;
+  font-style: italic;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+ins {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +167,7 @@ body {
 }
 
 header {
-  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  background: linear-gradient(180deg, #e8f5c8 0%, #ffffff 96.87%);
   padding: 2rem;
 }
 header nav {
@@ -15,7 +177,7 @@ header nav {
   gap: 1.6rem;
 }
 header nav .linha {
-  border-top: 1px solid #0C0421;
+  border-top: 1px solid #0c0421;
   width: 80%;
 }
 header nav ul {
@@ -29,7 +191,7 @@ header nav ul a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  color: #0C0421;
+  color: #0c0421;
   font-weight: 500;
   line-height: 33px;
   font-size: 22px;
@@ -50,7 +212,7 @@ header #home .textos-home {
 }
 header #home .textos-home h1 {
   font-size: 42px;
-  color: #0C0421;
+  color: #0c0421;
   margin-bottom: 2rem;
   font-family: "Krona One", sans-serif;
 }
@@ -70,7 +232,7 @@ header #home .textos-home .btn-main {
 }
 header #home .textos-home .btn-main:hover {
   background: #85a0ff;
-  color: #CAD4FA;
+  color: #cad4fa;
 }
 header #home .img-home {
   max-width: 474px;
@@ -103,7 +265,7 @@ header #home .img-home img {
 #nosso-espaco .detalhes .espaco-textos .infos {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
-  color: #0C0421;
+  color: #0c0421;
 }
 #nosso-espaco .detalhes .espaco-textos .separador {
   width: 100%;
@@ -113,7 +275,7 @@ header #home .img-home img {
 }
 
 #servico {
-  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  background: linear-gradient(180deg, #e8f5c8 0%, #ffffff 96.87%);
   padding: 5rem 0;
 }
 #servico .cards {
@@ -132,12 +294,12 @@ header #home .img-home img {
 #servico .cards .card-titulo {
   font-family: "Krona One", sans-serif;
   font-size: 1.6rem;
-  color: #0C0421;
+  color: #0c0421;
 }
 #servico .cards .card-texto {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
-  color: #0C0421;
+  color: #0c0421;
 }
 
 #desconto {
@@ -146,20 +308,138 @@ header #home .img-home img {
   justify-content: space-between;
   text-align: center;
 }
-#desconto h4 {
+#desconto .desconto-form {
+  display: flex;
+  flex-direction: column;
+  height: 194px;
+  justify-content: space-between;
+}
+#desconto .desconto-form h4 {
   font-family: "Krona One", sans-serif;
   font-size: 1.6rem;
-  color: #0C0421;
+  color: #0c0421;
 }
-#desconto p {
+#desconto .desconto-form p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
-  color: #0C0421;
+  color: #0c0421;
 }
 #desconto .input-btn {
+  width: 790px;
+  margin: 0 auto;
   height: 65px;
   border: 1px solid #4e75ff;
   border-radius: 65px;
+  display: inline-flex;
+}
+#desconto .input-btn input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0c0421;
+  width: 513.5px;
+  border: none;
+  outline: none;
+  margin-left: 2rem;
+}
+#desconto .input-btn button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  width: 276.5px;
+  background: #4e75ff;
+  border-radius: 0px 65px 65px 0;
+  border: none;
+}
+
+#contatos {
   margin: 0 auto;
-  width: 790px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#contatos .contatos-imgs {
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+#contatos .contatos-imgs img {
+  width: 100%;
+}
+#contatos .contatos-imgs img:nth-child(n+2) {
+  width: 45%;
+}
+#contatos .contatos-form {
+  max-width: 50%;
+  background: linear-gradient(180deg, #e8f5c8 0%, #ffffff 96.87%);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 48px;
+  border-radius: 48px;
+}
+#contatos .contatos-form .titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  color: #4e75ff;
+}
+#contatos .contatos-form .infos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #0c0421;
+  line-height: 33px;
+  font-weight: 400;
+}
+#contatos .contatos-form .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+#contatos .contatos-form .inputs .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#contatos .contatos-form .inputs .form-group label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #0c0421;
+  font-weight: 600;
+}
+#contatos .contatos-form .inputs .form-group input {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 16px;
+  border-radius: 32px;
+  outline: none;
+}
+#contatos .contatos-form .inputs .form-group input::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: #0c0421;
+  font-weight: 400;
+  color: #5d586c;
+}
+#contatos .contatos-form .inputs .form-group input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: #0c0421;
+  font-weight: 400;
+  color: #5d586c;
+}
+#contatos .contatos-form .inputs .form-group:nth-child(n+3) {
+  height: 120px;
+}
+#contatos .contatos-form .inputs .btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #ffffff;
+  background: #4e75ff;
+  border: none;
+  border-radius: 40px;
+  padding: 24px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

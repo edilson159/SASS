@@ -1,26 +1,57 @@
-@use "../abstract/variaveis" ;
+@use "../abstract/variaveis";
 
 @use "../abstract/mixins";
 
-#desconto{
+#desconto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  .desconto-form {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    height: 194px;
     justify-content: space-between;
-    text-align: center;
-    h4{
-        @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.6rem, variaveis.$cor-primaria)
+    h4 {
+      @include mixins.ff-fs-color(
+        variaveis.$ft-titulos,
+        1.6rem,
+        variaveis.$cor-primaria
+      );
     }
-    p{
-        @include mixins.ff-fs-color(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria)
+    p {
+      @include mixins.ff-fs-color(
+        variaveis.$ft-textos,
+        1.2rem,
+        variaveis.$cor-primaria
+      );
     }
-    .input-btn {
-        $largura-input:790px;
-        height: 65px;
-        border: 1px solid variaveis.$cor-secundaria;
-        border-radius: 65px;
-        @include mixins.margin-center($largura-input);
-        // display: grid;
-        // grid-template-columns: 1fr auto;
+  }
+  .input-btn {
+    $largura-input: 790px;
+    width: $largura-input;
+    margin: 0 auto;
+    height: 65px;
+    border: 1px solid variaveis.$cor-secundaria;
+    border-radius: 65px;
+    display: inline-flex;
+    input {
+      @include mixins.ff-fs-color(
+        variaveis.$ft-textos,
+        1.2rem,
+        variaveis.$cor-primaria
+      );
+      width: calc($largura-input * 0.65);
+      border: none;
+      outline: none;
+      margin-left: 2rem;
     }
-    
+    button {
+      @include mixins.ff-fs-color(variaveis.$ft-textos, 1.2rem, #ffffff);
+      width: calc($largura-input * 0.35);
+      background: variaveis.$cor-secundaria;
+      border-radius: 0px 65px 65px 0;
+      border: none;
+    }
+  }
 }
