@@ -1,9 +1,9 @@
-@use "./abstract/root.scss" ;
+@use "./abstract/root" ;
 
-@use "./componentes/header.scss" ;
+@use "./componentes/header" ;
 
-@use "./componentes/nosso-espaco.scss";
+@use "./componentes/nosso-espaco";
 
 @use "./componentes/servico";
 
-
+@use "./componentes/discont"

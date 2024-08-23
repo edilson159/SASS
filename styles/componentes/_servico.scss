@@ -6,7 +6,7 @@
     background: variaveis.$gradiente-primario;
     padding: 5rem 0;
     .cards {
-        @include mixins.margin-center(80%);
+        @include mixins.margin-center(80%);  
         display: flex;
         gap: 1.5rem;
         .card{
