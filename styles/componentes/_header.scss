@@ -66,10 +66,10 @@ header {
         font-size: 22px;
         line-height: 28px;
         border: none;
-      }
-      .btn-main:hover {
-        background: variaveis.$cor-terciaria;
-        color: variaveis.$cor-default;
+        &:hover {
+          background: variaveis.$cor-terciaria;
+          color: variaveis.$cor-default;
+        }
       }
     }
     .img-home {
